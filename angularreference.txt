@@ -33,7 +33,18 @@ Files to change
 
 
 14.In package.json remove ^ so that only 4.0.0 version is used.
-15. Add the installed packages in angular-cli.json
+15. Add the installed packages in angular.json
+"styles": [
+              "styles.css",
+              "./node_modules/font-awesome/css/font-awesome.css",
+              "./node_modules/bootstrap/dist/css/bootstrap.css"              
+            ],
+            "scripts": [
+              "./node_modules/jquery/dist/jquery.js",
+              "./node_modules/popper.js/dist/umd/popper.js",
+              "./node_modules/bootstrap/dist/js/bootstrap.js"
+            ],
+
 16. Installation of AWESOME FONT
 17. Setting up service
 ng g s services/data --module=app.module
